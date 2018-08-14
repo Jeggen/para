@@ -36,7 +36,13 @@ h3 {
 }
 
 .center { margin: 0 auto; }
-.content{ margin: 0 auto; width: 960px; }
+
+.content{
+  margin: 0 auto;
+  width: 960px;
+  /* padding-top: 200px; */
+}
+
 .clear { clear: both; }
 
 body{
@@ -177,7 +183,7 @@ h3 {
   background-color: #fff;
   color: #333333;
   height: 300px;
-  padding-bottom: 1000px;
+  padding: 200px 0px 1000px 0px;
 }
 
 #slide5{
@@ -202,20 +208,22 @@ h3 {
   width: 800px;
 }
 
-.forefront-element {
-  -webkit-transform: translateZ(999px) scale(.7);
-  transform: translateZ(999px) scale(.7);
-  z-index: 1;
+.light-background {
+  background-color: white !important;
+  transition: background-color 3s ease;
 }
 
-.base-element {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
+.darken-background {
+  background-color: #777777 !important;
+  transition: background-color 3s ease;
 }
 
-.background-element {
-  -webkit-transform: translateZ(-999px) scale(2);
-  transform: translateZ(-999px) scale(2);
-  z-index: 3;
+.dark-background {
+  background-color: #555555 !important;
+  transition: background-color 3s ease;
+}
+
+.darkest-background {
+  background-color: black !important;
+  transition: background-color 3s ease;
 }
